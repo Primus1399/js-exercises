@@ -49,15 +49,9 @@ while (b <= nInt) {
 //     ######
 //     #######
 
-// let hash = 2;
-// let arr = [];
-
-// while (arr.length < hash && hash <= 7) {
-//     arr.push('#');
-//     console.log(arr);
-// }
-// while (hash < 7) {
-//     arr.toString().split(',').join('');
-//     hash++
-//     console.log(arr)
-// }
+let hash = '#';
+let empty = '';
+for (let i = 0; i <= 6; i++) {
+    empty += hash;
+    console.log(empty);
+}
