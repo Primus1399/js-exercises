@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Document Object Model</title>
+  </head>
+
+  <body>
+    <input type="text" id="sentence-input" placeholder="Write a sentence."/>
+    <button>Click Me</button>
+    <p></p>
+
+    <script>
+      const button = document.querySelector('button')
+      const input = document.getElementById('sentence-input')
+      const p = document.querySelector('p')
+      button.addEventListener('mouseenter', () => {
+        p.textContent = input.value
+      })
+    </script>
+  </body>
+</html>
+
+<!-- <!DOCTYPE html>
+<html>
+  <head>
+    <title>Document Object Model</title>
+  </head>
+
+  <body>
+    <input type="text" placeholder="Write a sentence."/>
+    <button onclick="forTextContent()">Click me</button>
+    <p></p>
+
+    <script>
+      const input = document.querySelector('input')
+      const p = document.querySelector('p')
+      const forTextContent = () => {
+        p.textContent = input.value
+      }
+    </script>
+  </body>
+</html> -->
